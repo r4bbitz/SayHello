@@ -2,7 +2,7 @@ package route
 
 import (
 	"github.com/labstack/echo"
-	"github.com/r4bbitz/SayHello/api/v1/promotion/gateway/handler"
+	"github.com/r4bbitz/SayHello/api/v1/sayhello/gateway/handler"
 )
 
 // PromotionRoute is the interface

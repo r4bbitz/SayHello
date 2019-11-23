@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/labstack/echo"
-	"github.com/r4bbitz/SayHello/api/v1/promotion/domain"
+	"github.com/r4bbitz/SayHello/api/v1/sayhello/domain"
 	"net/http"
 )
 
