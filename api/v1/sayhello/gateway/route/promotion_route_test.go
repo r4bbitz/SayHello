@@ -24,7 +24,7 @@ func TestRoute(t *testing.T) {
 	r := e.Router()
 
 	// Routes
-	path := "/api/v1/promotion"
+	path := "/api/v1/sayhello"
 	r.Add(http.MethodGet, path, func(echo.Context) error {
 		return nil
 	})

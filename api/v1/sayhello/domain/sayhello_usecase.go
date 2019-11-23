@@ -1,8 +1,8 @@
 package domain
 
 import (
-	"github.com/r4bbitz/SayHello/api/v1/promotion/data/repository"
-	"github.com/r4bbitz/SayHello/api/v1/promotion/model"
+	"github.com/r4bbitz/SayHello/api/v1/sayhello/data/repository"
+	"github.com/r4bbitz/SayHello/api/v1/sayhello/model"
 )
 
 // PromotionUseCase is the interface

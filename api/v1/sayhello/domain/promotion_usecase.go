@@ -19,7 +19,7 @@ type promotionUseCase struct {
 	Repo repository.PromotionRepository
 }
 
-// NewPromotionUseCase is the function new promotion use case
+// NewPromotionUseCase is the function new sayhello use case
 func NewPromotionUseCase(repo repository.PromotionRepository) PromotionUseCase {
 	return &promotionUseCase{
 		Repo: repo,

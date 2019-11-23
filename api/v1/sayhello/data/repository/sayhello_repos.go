@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/r4bbitz/SayHello/api/v1/promotion/model"
+	"github.com/r4bbitz/SayHello/api/v1/sayhello/model"
 	"time"
 )
 
