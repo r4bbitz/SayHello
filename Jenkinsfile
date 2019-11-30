@@ -9,7 +9,11 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'go build '
+        sh '''export GOROOT="/usr/local/go"
+export PATH=$PATH:$GOROOT/bin
+export GOPATH="/var/lib/jenkins/workspace/go"
+
+go build'''
       }
     }
 
