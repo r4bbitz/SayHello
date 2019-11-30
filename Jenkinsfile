@@ -19,7 +19,14 @@ go build'''
 
     stage('Test') {
       steps {
-        sh 'go test'
+        sh '''export GOROOT="/usr/local/go"
+export PATH=$PATH:$GOROOT/bin
+export GOPATH="/var/lib/jenkins/workspace/go"
+
+
+
+
+go test'''
       }
     }
 
