@@ -17,9 +17,9 @@ go build'''
       }
     }
 
-    stage('run') {
+    stage('Test') {
       steps {
-        sh './SayHello'
+        sh 'go test'
       }
     }
 
