@@ -34,7 +34,7 @@ go build'''
         stage('integrated test') {
           steps {
             sh '''export PATH=$PATH:/usr/local/bin
-docker run -t postman/newman run "https://www.postman.com/collections/8a0c9bc08f062d12dcda"'''
+docker run -t postman/newman run automationtest/SayHelloAutomationTest.postman_collection.json -d automationtest/input.json'''
           }
         }
 
