@@ -1,0 +1,14 @@
+{
+	"id": "d4ddd063-a57a-4abf-a447-7095efd9de7d",
+	"name": "local",
+	"values": [
+		{
+			"key": "ip",
+			"value": "192.168.2.36",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-05-16T10:25:43.377Z",
+	"_postman_exported_using": "Postman/7.25.0-canary01"
+}

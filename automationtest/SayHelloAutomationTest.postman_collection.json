@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "912682bb-c385-43e8-be46-d92958cad303",
+		"_postman_id": "aa65aeca-4b51-43e1-926c-a7752836a9fc",
 		"name": "SayHelloAutomationTest",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "1b76d361-bad5-40ff-9b9d-3921b40aa479",
+						"id": "7b8ef6c7-73e6-4e9c-ade0-003477744c6c",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -43,10 +43,10 @@
 					"urlencoded": []
 				},
 				"url": {
-					"raw": "http://localhost:1991/api/v1/sayHello/?timeInput={{input_time}}",
+					"raw": "http://{{ip}}:1991/api/v1/sayHello/?timeInput={{input_time}}",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{ip}}"
 					],
 					"port": "1991",
 					"path": [
