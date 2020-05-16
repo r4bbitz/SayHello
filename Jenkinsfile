@@ -8,12 +8,26 @@ pipeline {
     }
 
     stage('build') {
-      steps {
-        sh '''export GOROOT="/usr/local/go"
+      parallel {
+        stage('build') {
+          steps {
+            sh '''export GOROOT="/usr/local/go"
 export PATH=$PATH:$GOROOT/bin
 export GOPATH="/var/lib/jenkins/workspace/go"
 
 go build'''
+          }
+        }
+
+        stage('unit test') {
+          steps {
+            sh '''export GOROOT="/usr/local/go"
+export PATH=$PATH:$GOROOT/bin
+export GOPATH="/var/lib/jenkins/workspace/go"
+go test -v'''
+          }
+        }
+
       }
     }
 
