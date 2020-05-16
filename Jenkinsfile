@@ -40,14 +40,7 @@ docker run -t postman/newman run automationtest/SayHelloAutomationTest.postman_c
 
         stage('start app') {
           steps {
-            sh '''export GOROOT="/usr/local/go"
-export PATH=$PATH:$GOROOT/bin
-export GOPATH="/var/lib/jenkins/workspace/go"
-
-
-
-
-pwd'''
+            sh 'echo ${workspace}'
           }
         }
 
