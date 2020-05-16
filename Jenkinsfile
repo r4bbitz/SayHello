@@ -34,7 +34,6 @@ go build'''
         stage('integrated test') {
           steps {
             sh '''export PATH=$PATH:/usr/local/bin
-./SayHello
 docker run -v "/Users/dumrongkiat/.jenkins/workspace/SayHello_master":"/etc/newman" newman:1.0 run automationtest/SayHelloAutomationTest.postman_collection.json -d automationtest/input.json'''
           }
         }
