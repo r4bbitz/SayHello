@@ -40,7 +40,7 @@ docker run -t postman/newman run automationtest/SayHelloAutomationTest.postman_c
 
         stage('start app') {
           steps {
-            sh 'echo ${workspace}'
+            sh 'pwd'
           }
         }
 
